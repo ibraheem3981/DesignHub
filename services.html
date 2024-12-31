@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Services</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    #services {
+      padding: 20px;
+      text-align: center;
+      background: #f9f9f9;
+    }
+    .services-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 30px;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .service {
+      background: white;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .service:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .service i {
+      font-size: 2.5rem;
+      color: #007BFF;
+      margin-bottom: 10px;
+    }
+    .service h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+    .service p {
+      margin-bottom: 20px;
+    }
+    .contact-button {
+      display: inline-block;
+      padding: 10px 15px;
+      background-color: #007BFF;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      transition: background-color 0.3s;
+    }
+    .contact-button:hover {
+      background-color: #0056b3;
+    }
+       For small screens (tablets in portrait mode) */
+  @media (min-width: 577px) and (max-width: 768px) {
+    .services-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  /* For medium screens (tablets in landscape mode) */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .services-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  /* For large screens (desktops and mini PCs) */
+  @media (min-width: 1025px) {
+    .services-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  </style>
+</head>
+<body>
+  <header style="background: #333; padding: 15px; text-align: center;">
+  <nav>
+    <a href="index.html" style="color: white; text-decoration: none; font-size: 1.2rem;">
+      &larr; Back to Home
+    </a>
+  </nav>
+</header>
+
+  <section id="services">
+    <div class="services-container">
+      <h2>Our Services</h2>
+      <p>We provide a wide range of services tailored to your needs.</p>
+      <div class="services-grid">
+        <!-- Web Design -->
+        
+        <!-- Web Development -->
+        <div class="service">
+          <i class="fas fa-code"></i>
+          <h3>Web Development</h3>
+          <p>Building functional and efficient websites with cutting-edge technologies.</p>
+          <a href="https://wa.me/+2347039817488" class="contact-button">Contact Us</a>
+        </div>
+            <!-- Android qpp Development -->
+        <div class="service">
+          <i class="fa-brands fa-android"></i>
+          <h3>Android App Development</h3>
+          <p>Transform Your Ideas into Reality! Get custom Android apps developed by our expert team.</p>
+          <a href="https://wa.me/+2347039817488" class="contact-button">Contact Us</a>
+        </div>
+        <!-- UI/UX Design -->
+        <div class="service">
+          <i class="fas fa-pencil-ruler"></i>
+          <h3>UI/UX Design</h3>
+          <p>Designing seamless user experiences that keep your audience engaged.</p>
+          <a href="https://wa.me/+2347039817488" class="contact-button">Contact Us</a>
+        </div>
+        <!-- Graphics Design -->
+        <div class="service">
+          <i class="fas fa-vector-square"></i>
+          <h3>Graphics Design</h3>
+          <p>Creating high-quality visuals to establish a strong brand identity.</p>
+          <a href="https://wa.me/+2347039817488" class="contact-button">Contact Us</a>
+        </div>
+        <!-- Invitation Card -->
+        <div class="service">
+          <i class="fas fa-envelope-open-text"></i>
+          <h3>Invitation Card</h3>
+          <p>Personalized designs for weddings, parties, and special events.</p>
+          <a href="https://wa.me/+2347039817488" class="contact-button">Contact Us</a>
+        </div>
+        <!-- Flyer -->
+        <div class="service">
+          <i class="fas fa-file-alt"></i>
+          <h3>Flyer</h3>
+          <p>Engaging and professional flyers to promote your business or events.</p>
+          <a href="https://wa.me/+2347039817488" class="contact-button">Contact Us</a>
+        </div>
+        <!-- Printing -->
+        <div class="service">
+          <i class="fas fa-print"></i>
+          <h3>Printing</h3>
+          <p>Offering premium printing solutions for all your business needs.</p>
+          <a href="https://wa.me/+2347039817488" class="contact-button">Contact Us</a>
+        </div>
+        <!-- Online Registration -->
+        <div class="service">
+          <i class="fas fa-laptop"></i>
+          <h3>Online Registration</h3>
+          <p>Seamlessly managing registrations for schools, businesses, and more.</p>
+          <a href="https://wa.me/+2347039817488" class="contact-button">Contact Us</a>
+        </div>
+        <!-- Plastic Nigeria National ID Card -->
+        <div class="service">
+          <i class="fas fa-id-card"></i>
+          <h3>Plastic National ID Card</h3>
+          <p>Design and production of durable, high-quality ID cards.</p>
+          <a href="https://wa.me/+2347039817488" class="contact-button">Contact Us</a>
+        </div>
+        <!-- Video Invitation -->
+        <div class="service">
+          <i class="fas fa-video"></i>
+          <h3>Video Invitation</h3>
+          <p>Unique and creative video invitations for your special occasions.</p>
+          <a href="https://wa.me/+2347039817488" class="contact-button">Contact Us</a>
+        </div>
+            <!-- Calender -->
+        <div class="service">
+          <i class="fa-solid fa-calendar"></i>
+          <h3>Calender</h3>
+          <p>Our expert designers will craft a custom calendar that showcases your business, organization, or personal style.</p>
+          <a href="https://wa.me/+2347039817488" class="contact-button">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

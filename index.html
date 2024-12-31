@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design Hub</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" href="logo.pn">
+</head>
+<body>
+  <style>/* General styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+/* Navbar styling */
+.nav-links {
+  list-style: none;
+  display: flex; /* Default for PC */
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+.nav-links li a{
+   text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+
+/* Hamburger Menu (hidden by default for PC) */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  background: white;
+  height: 3px;
+  width: 25px;
+  border-radius: 2px;
+}
+
+/* Media Query for Mobile View */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hide navbar by default */
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: #333;
+    padding-top: 50px;
+  }
+
+  .nav-links.active {
+    display: flex; /* Show navbar when active */
+  }
+
+  .nav-links li {
+    margin: 15px 0;
+  }
+
+  .hamburger {
+    display: flex; /* Show hamburger menu */
+  }
+}
+  /* Breakpoint for PC Sizes */
+@media (min-width: 1024px) {
+  .nav-links {
+    display: flex; /* Show the nav bar */
+  }
+
+  .hamburger {
+    display: none; /* Hide the hamburger menu */
+  }
+}
+/* Base Styles for Navigation Links */
+.nav-link {
+  list-style: none;
+  display: flex; /* Show nav links in a row */
+  gap: 20px; /* Space between links */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link li a:hover {
+  color: #ff9800; /* Change color on hover */
+}
+
+/* Mobile Breakpoint - Hide Navigation Links */
+@media (max-width: 768px) {
+  .nav-link {
+    display: none; /* Hide the nav links on mobile */
+  }
+}
+  
+.recent-projects {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.section-title {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project-card {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.project-title {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.project-description {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+</style>
+  <header>
+  <div class="logo">
+    <h1>Design Hub</h1>
+  </div>
+  <nav>
+    <ul class="nav-link">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contacts.html">Contact</a></li>
+    </ul>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contacts.html">Contact</a></li>
+    </ul>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+</header>
+
+  <main class="hero-section">
+  <div class="hero-content">
+    <h2>Elevate Your Digital Presence</h2>
+    <p>Specializing in Web Design, Graphic Design, and UI/UX Design to bring your vision to life.</p>
+    <a href="services.html" class="cta-button">Discover Our Services</a>
+  </div>
+  <div class="hero-image">
+    <img src="hero.png" alt="Person working on laptop">
+  </div>
+</main>
+  <section class="why-us">
+  <div class="container">
+    <h2>Why Choose Us?</h2>
+    <p>We are committed to delivering exceptional design services tailored to your needs.</p>
+    <div class="features">
+      <div class="feature">
+        <h3>Creative Design</h3>
+        <p>Innovative and visually appealing designs to captivate your audience.</p>
+      </div>
+      <div class="feature">
+        <h3>Customer Focused</h3>
+        <p>Your satisfaction is our priority. We tailor solutions to your needs.</p>
+      </div>
+      <div class="feature">
+        <h3>Timely Delivery</h3>
+        <p>We value your time and ensure timely delivery of projects.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="our-products">
+  <div class="container">
+    <h2>Our Products</h2>
+    <div class="product-grid">
+      <div class="product">
+        <i class="fa fa-code"></i> <h3>Web Design</h3>
+        <p>Engaging and user-friendly websites tailored to your brand.</p>
+      </div>
+      <div class="product">
+        <i class="fa fa-paint-brush"></i>  <h3>Graphic Design</h3>
+        <p>High-quality visuals that elevate your brand’s identity.</p>
+      </div>
+      <div class="product">
+        <i class="fa fa-mobile"></i> <h3>UI/UX Design</h3>
+        <p>Seamless user experiences that keep your audience engaged.</p>
+      </div>
+    </div>
+  </div>
+</section>
+  <section class="recent-projects">
+    <h1 class="section-title">Recent Projects</h1>
+    <div class="projects-container">
+      <div class="project-card">
+        <img src="p1.png" alt="Project 1" class="project-image">
+        <h2 class="project-title">Invitation Card</h2>
+        <p class="project-description">Invitation Card for one of our client . I had the pleasure of designing a beautiful invitation card for our esteemed client.</p>
+      </div>
+      <div class="project-card">
+        <img src="p2.jpg" alt="Project 2" class="project-image">
+        <h2 class="project-title">Event Flyer</h2>
+        <p class="project-description">I designed an eye-catching flyer that effectively promotes our client's event, highlighting key details and visuals.</p>
+      </div>
+      <div class="project-card">
+        <img src="p3.jpg" alt="Project 3" class="project-image">
+        <h2 class="project-title">Business Website</h2>
+        <p class="project-description">We designed a stunning website for business, featuring a modern and responsive design that showcases their brand and services.</p>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-section about">
+        <h3>About Us</h3>
+        <p>We specialize in creating exceptional designs for web, graphic, and UI/UX, ensuring your digital presence stands out.</p>
+      </div>
+
+      <div class="footer-section links">
+      
+        <ul id="navul">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contacts.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section social">
+        <h3>Follow Us</h3>
+        <div class="social-icons" style="list-style:none;">
+          <a href="https://www.facebook.com/ibrahim.mibrahim.5496683"><i class="fab fa-facebook-f"></i></a>
+          <a href="tiktok.com/@design__hub"><i class="fab fa-tiktok"></i></a>
+          <a href="https://www.instagram.com/legend__ibraheem/profilecard/?igsh=dHhnZmdsZXlzNmM3"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2024 Design Hub | All Rights Reserved</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Add Font Awesome CDN -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
